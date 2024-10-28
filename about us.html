@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+.icon-container i{
+    color: #9e9a9a;
+
+}
+.icon-container i:hover{
+    color: #e0e5ec;
+}
+
+
+  
+.nav-links {
+    display: flex;
+    gap: 15px;
+    transition: left 0.3s ease;
+}
+
+/* Make .nav-links responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;  
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #111;
+    }
+
+    .nav-links.active {
+        left: 0; 
+    }
+
+   
+    .hamburger {
+        display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; 
+    top: 15px;  
+    z-index: 10;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+   
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #444141;
+        color: #333;
+    }
+    .na a{
+        color: #8f8787;
+    }
+    .benefits-section {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    
+    .benefits-section h1 {
+        margin-bottom: 40px;
+        color:wheat;
+    }
+    
+    .benefits-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .benefit {
+        background-color:#4e5052;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .benefit:hover{
+        transform: scale(1.05);
+       
+  
+    }
+    .footer-content{
+        margin-top: 40px;
+    }
+    .benefit img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .benefit h2 {
+        color:wheat;
+        margin-bottom: 15px;
+    }
+    
+    .benefit p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: wheat;
+    }
+
+
+
+.container {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 50px auto 0; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.container:hover{
+    transform: scale(1.05);
+    
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form-left, .form-right {
+    padding: 40px;
+    width: 50%;
+}
+
+.form-left {
+    background-color: #fff;
+}
+
+.form-right {
+    background: linear-gradient(135deg, #e0e5ec, #8c8f91, #424444); /* Example: bluish gray gradient */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color:rgb(20, 48, 71);
+}
+p{
+    color: rgb(20, 48, 71);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms a{
+    color: rgb(20, 48, 71);
+}
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ada5b9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a88caa;
+ 
+    color: #646566;
+}
+
+.sign-in {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-in a {
+    color:rgb(20, 48, 71);
+    text-decoration: none;
+}
+
+
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+.socila-media{
+    color: #ccc;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%; 
+        margin: 0 auto;
+      
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .form-right {
+        border-radius: 0 0 20px 20px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+  .form-right {
+    display: none;
+  }
+}
+.footer-bottom p{
+    color: wheat;
+}
+
+
+
+    </style>
+
+<nav class="na">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="about us.html">About Us</a>
+    </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<div class="icon-container">
+    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.google.com"><i class="fa-solid fa-globe"></i></a>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>    
+</div>
+    <section class="benefits-section">
+        <h1>"Shaping Tomorrow: Your Trusted Source for Tech News & Insights"</h1>
+        <div class="benefits-container">
+            <div class="benefit">
+                <img src="aboutus.webp" alt="Ease congestion icon">
+                <h2>Innovative Insights </h2>
+                <p>Delivering fresh perspectives on emerging technologies and trends.</p>
+            </div>
+
+
+        
+            <div class="benefit">
+                <img src="aboutus.webp" alt="Environmentally friendly icon">
+                <h2>Reliable Reporting</h2>
+                <p>Providing trusted, up-to-date information that tech enthusiasts and professionals can rely on</p>
+            </div>
+
+
+            <div class="benefit">
+                <img src="aboutus.webp" alt="Greater availability icon">
+                <h2>Future-Focused</h2>
+                <p>Covering groundbreaking advancements and helping readers understand tomorrow’s tech today.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="form-left">
+                <h2>Hello, friend!</h2>
+                <form id="signupForm">
+                    <div class="input-field">
+                        <input type="text" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="E-mail" id="email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <i class="toggle-password"></i>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I read and agree to <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit">CREATE ACCOUNT</button>
+                    <p class="sign-in">Already have an account? <a href="#">Sign in</a></p>
+                </form>
+            </div>
+            <div class="form-right">
+                <h2>Glad to see you!</h2>
+                <p>Being on the mailing list  means subscribers are the first to know about any announcements, product releases, special events, or other updates</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <div class="helpful-links">
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Live Chat</a> <span class="live-dot"></span></li>
+          </ul>
+        </div>
+        
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto:john@doe.com"><i class="fas fa-envelope"></i> john@doe.com</a></li>
+            <li><a href="tel:+0123456789"><i class="fas fa-phone"></i> 0123456789</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> 213 Lane, London, United Kingdom</a></li>
+          </ul>
+        </div>
+      </div>
+      
+</div>
+      <div class="footer-bottom">
+        <br>
+        <p>&copy; 2024 Newsblog. All rights reserved. <a href="#">Terms & Conditions</a> · <a href="#">Privacy Policy</a></p>
+    <br>
+    </div>
+    </footer>
+  </footer>
+</body>
+</html>
+
+   <script>
+
+
+
+document.querySelector('.toggle-password').addEventListener('click', function () {
+    const passwordInput = document.getElementById('password');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        this.style.color = '#6200EE';
+    } else {
+        passwordInput.type = 'password';
+        this.style.color = '#ccc';
+    }
+});
+
+document.getElementById('signupForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Form submitted!');
+});
+
+
+
+
+
+
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+    console.log("Hamburger clicked");
+    console.log("Hamburger active:", hamburger.classList.contains("active"));
+    console.log("Nav-links active:", navMenu.classList.contains("active"));
+});
+
+   </script>
+    <script src="js.js"></script>
+</body>
+</html>

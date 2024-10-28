@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+    <style>
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .image {
+        width: 80%;  
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .nav-links {
+      justify-content: center;
+        position: fixed;
+        top: 60px;  
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: #111;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    
+    .nav-links.active {
+        left: 0;
+    }
+
+
+    .hamburger {
+      display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; 
+    top: 15px; 
+  
+    z-index: 1001;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+  <nav class="na">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="about us.html">About Us</a>
+    </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+    <div class="icon-container">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.google.com"><i class="fa-solid fa-globe"></i></a>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>    
+    </div>
+        
+    
+ 
+ 
+    
+        
+ 
+    <hr class="slim-hr">
+   
+      
+     
+    <section class="industry-design">
+        <h2>TECHNOLOGY NEWS</h2>
+        <div class="articles">
+            <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+                <img src="ai6.webp" alt="UI Designer memahami bisnis klien">
+                <h3>September 25, 2024</h3>
+                <h4>Apple Unveils Vision Pro: Augmented Reality Headset Set to Revolutionize Tech Industry</h4>
+                <p>Apple has officially launched its long-anticipated Vision Pro augmented reality (AR) headset, signaling a groundbreaking move into the world of mixed reality.</p>
+            </a>
+            <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+                <img src="ai7.webp" alt="Kontrak project dengan klien">
+                <h3>October 4, 2024</h3>
+                <h4> Google Introduces AI-Powered Search Features in Major Update</h4>
+                <p>Google has announced a major update to its search engine, integrating advanced AI capabilities to provide users with more personalized and context-aware results.</p>
+            </a>
+            <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+                <img src="ai8.webp" alt="Pertanyaan project design">
+                <h3>0ctober 10, 2024</h3>
+                <h4>Samsung Unveils World’s First Rollable Smartphone Display</h4>
+                <p>The new display can expand and retract seamlessly, transforming from a standard phone screen to a small tablet with just a swipe.</p>
+            </a>
+            <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+                <img src="ai9.webp" alt="Programmer menjadi UI Designer">
+                <h3>October 18, 2024</h3>
+                <h4>Meta’s New Feature Allows Users to Customize AI Avatars with Voice Cloning</h4>
+                <p>Part of Meta's plan to integrate more immersive features into its platform, this voice technology could offer a unique way for people to interact with friends, family, and even businesses in the metaverse. </p>
+            </a>
+
+
+
+            
+        </div>
+  
+      
+     
+   <section class="industry-design">
+    
+      <div class="articles">
+          <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+              <img src="ai10.webp" alt="UI Designer memahami bisnis klien">
+              <h3>September 25, 2024</h3>
+              <h4>TSMC’s Expansion in Japan</h4>
+              <p>Taiwan Semiconductor Manufacturing Company (TSMC) plans to expand its advanced semiconductor packaging facilities in Japan, collaborating with Sony and Toyota.</p>
+          </a>
+          <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+              <img src="ai11.webp" alt="Kontrak project dengan klien">
+              <h3>October 4, 2024</h3>
+              <h4> Python's AI Role:</h4>
+              <p>Python retains the top spot in programming languages due to its versatility in data science and machine learning, though calls for faster alternatives in high-performance applications remain strong.</p>
+          </a>
+          <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+              <img src="ai13.webp" alt="Pertanyaan project design">
+              <h3>0ctober 10, 2024</h3>
+              <h4>Rust and Mojo's Rise in Popularity</h4>
+              <p>Rust, known for its focus on performance and memory safety, is climbing the TIOBE Index and is now ranked 13th. Its popularity is driven by an industry shift toward safer and faster languages.</p>
+          </a>
+          <a href="https://www.bing.com/aclick?ld=e8dKZ_0ndORabqzfTbVdgdVjVUCUxyvgkVxU4nuK5qZlqX2K-Jtf4QOM_coOdeLJQY-W6eKzCvBwC1raSDHZrs8blBGiyEG8HGil2N668nQHb8k_doZIvEHkP56UGTZGFrqmpHrT5SchQJkIRXixuUu3w0aWccfaTfIhf04nHRgb42GoO_81xxQvdWaQ1_vRuBx5iaPg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29nbml0ZS5jb20lMmZlbiUyZnByb2R1Y3QlMmZhdGxhcyUzZnV0bV90ZXJtJTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNnV0bV9jYW1wYWlnbiUzZEluZHVzdHJpYWwlMmJBSSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNmhzYV9hY2MlM2Q5ODMxODczNjkzJTI2aHNhX2NhbSUzZDIxNDQ3MTAxODgwJTI2aHNhX2dycCUzZDEzMjYwMTM0MDgyNTQ3NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkbyUyNmhzYV90Z3QlM2Rrd2QtODI4NzY5Nzc1NTcxNzclM2Fsb2MtMTcwJTI2aHNhX2t3JTNkYWklMjUyMHRlY2hub2xvZ3klMjUyMHByb3ZpZGVycyUyNmhzYV9tdCUzZGIlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDcwODA0ZDg1NTYyYTE0MDJjMDExMmE5ODAzNDg0YTMwJTI2dXRtX2NvbnRlbnQlM2RBdGxhcyUyNTIwQUk&rlid=70804d85562a1402c0112a9803484a30&ntb=1" class="article">
+              <img src="ai12.webp" alt="Programmer menjadi UI Designer">
+              <h3>October 18, 2024</h3>
+              <h4>Growing Demand for Secure Coding:</h4>
+              <p>With security concerns on the rise, developers are increasingly favoring languages with strong built-in safety features. Rust’s secure memory model is partly why it’s gaining adoption over languages like C++  </p>
+          </a>
+
+
+
+          
+      </div>
+  </section>
+
+    
+
+
+    <div class="footer-content">
+        <div class="helpful-links">
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Live Chat</a> <span class="live-dot"></span></li>
+          </ul>
+        </div>
+        
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto:john@doe.com"><i class="fas fa-envelope"></i> john@doe.com</a></li>
+            <li><a href="tel:+0123456789"><i class="fas fa-phone"></i> 0123456789</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> 213 Lane, London, United Kingdom</a></li>
+          </ul>
+        </div>
+      </div>
+     
+</div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Newsblog. All rights reserved. <a href="#">Terms & Conditions</a> · <a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+  </footer>
+<script>
+   const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
